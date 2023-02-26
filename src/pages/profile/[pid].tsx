@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useRouter } from "next/router";
 import { Navbar } from "@/components";
-import { Ben, Hans, Patrick, Siena, Error } from "@/components/profileCard";
+import { Ben, Hans, Patrick, Siena, NoUser } from "@/components/profileCard";
 type Props = {};
 
 const profile = (props: Props) => {
@@ -118,7 +118,7 @@ const profile = (props: Props) => {
   } else {
     return (
       <>
-        <Error />
+        <NoUser />
       </>
     );
   }
